@@ -35,6 +35,6 @@ Feature: Valid and invalid login Test
 
     Examples: 
       | userName            | password     |
-      | "smtk123@gmail.com" | "Yaamin@321" |
-      | "smtk13@gmail.com"  | "Yaamin@321" |
-      | "smtk23@gmail.com"  | "Yaamin@321" |
+      | "21tarsm@gmail.com" | "Meah@342"   |
+      | "21tarsm@gmail.com" | "Meah@2017"  |
+      | "smtk2@gmail.com"   | "Yaamin@321" |
