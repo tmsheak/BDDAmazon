@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="12.365">
+    <testcase classname="Verify  Login Functionality" name="Verify the login functionality using valid credential" time="12.23">
+        <failure message="Unable to find element with locator By.id: nav-link-accountList-nav-line-1&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.7.2', revision: '4d4020c3b7'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given User is on Amazon Homepage............................................passed
+And User click on signinbutton..............................................failed
+When User input valid username..............................................skipped
+And User click on Continuebutton............................................skipped
+And User input valid password...............................................skipped
+And User click on loginbutton...............................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.id: nav-link-accountList-nav-line-1
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at com.tarekacademy.base.BasePage.getWebElement(BasePage.java:23)
+	at com.tarekacademy.base.BasePage.getSignInClick(BasePage.java:40)
+	at com.tarekacademy.LoginPages.LoginPage.setSignInClick(LoginPage.java:30)
+	at com.tarekacademy.LoginTests.LoginTest.user_click_on_signinbutton(LoginTest.java:23)
+	at ✽.User click on signinbutton(file:///C:/Users/21tar/Tarek_Selenium/AmazonWithBDD/src/test/resources/Features/Login.feature:9)
+]]></failure>
+    </testcase>
+</testsuite>
