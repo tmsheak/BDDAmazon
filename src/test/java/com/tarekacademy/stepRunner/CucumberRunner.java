@@ -15,8 +15,8 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 		
 		snippets=SnippetType.CAMELCASE,
 		//features="features",
-		features="src/test/resources/Features",
-		tags=" @login1",
+		features="src/test/resources/Features", // Run all feature files/scenarios
+		tags=" @login1", // will run only "login1" annoted scenarios
 		//glue={"stepDefinations"}
 		glue="com.tarekacademy.LoginTests",
 		stepNotifications=true,
@@ -28,28 +28,35 @@ public class CucumberRunner{
 
 }
 
-/* monochrome=true: output for the Cucumber test are much more readable.*/
+/* By Tarek
+ * monochrome=true: output for the Cucumber test are much more readable.*/
 
-/*dryRun=false: Cucumber will verify individual steps in the Feature file and the implementation code of steps in Feature file */
+/*dryRun=true: Cucumber will verify individual steps in the Feature file 
+ * and the implementation code of steps in Feature file */
 
 /*within the Step Definition file */
 
 /*stepNotifications=true: Provide details steps at runs result */
 
-/* @RunWith annotation tells JUnit that tests should run using Cucumber class present in 'Cucumber. api. junit' package */
+/* @RunWith annotation tells JUnit that tests should run using 
+ * Cucumber class present in 'Cucumber. api. junit' package */
 
 /* @CucumberOptions are like property files or settings for your test */
 
 /* Pretty: Prints the Gherkin source with additional colors and stack traces for errors.*/
 
-/* Cucumber uses reporter plugins to produce reports that contain information about what scenarios have passed or failed. */
+/* Cucumber uses reporter plugins to produce reports that contain information about
+ *  what scenarios have passed or failed. */
 
-/* The glue is a part of Cucumber options that describes the location and path of the step definition file */
+/* The glue is a part of Cucumber options that describes the location and path of 
+ * the step definition file */
 
 /* Features option helps Cucumber to locate feature files */
 
-/* Snippets. When Cucumber encounters a Gherkin step without a matching step definition, it will print a step definition 
-      snippet with a matching Cucumber Expression   */
+/* Snippets. When Cucumber encounters a Gherkin step without a matching step definition,
+ *  it will print a step definition snippet with a matching Cucumber Expression   */
+
+/* snippets=SnippetType.CAMELCASE         // will follow camel casing format */
  
 
 

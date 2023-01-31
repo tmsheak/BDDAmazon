@@ -11,8 +11,7 @@ Feature:  Verify  Login Functionality
     And User click on Continuebutton
     And User input valid password
     And User click on loginbutton
-   # Then User validate the landing page
-    #And User validate the page tittle
-    #And User click on LogoutButton
-    #Then User click on LogoutButton
+    #Then User validate the landing page
+    #And User validate the page tittle   
+    Then User click on LogoutButton
 

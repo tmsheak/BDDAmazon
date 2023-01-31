@@ -11,7 +11,8 @@ import org.openqa.selenium.interactions.Actions;
 public class BasePage {
 	protected WebDriver driver; 
 	    /* To use this driver, need to create Is-A Relationship
-	     * created constructor using driver(highlighted) source --> Created constructor  using field
+	     * created constructor using driver(highlighted) source --> 
+	     * Created constructor  using field
 	     */
 
 	public BasePage(WebDriver driver) {

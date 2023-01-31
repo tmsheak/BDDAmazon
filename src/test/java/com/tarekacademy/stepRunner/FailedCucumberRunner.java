@@ -16,7 +16,7 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 		glue="com.tarekacademy.LoginTests",
 		stepNotifications=true,
 		monochrome=true	)
-//Tool Bar: Run--> Run Configuration --> Run  Before Runner ready		
+//This class is responsible for running failed scenarios only		
 public class FailedCucumberRunner{
 
 }

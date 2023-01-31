@@ -2,9 +2,9 @@ package com.tarekacademy.LoginPages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-
 import com.tarekacademy.base.BasePage;
 
+//The various elements on the page are defined as variables in this class
 public class LoginPage extends BasePage {
 	//once you extended BasePage, constructor need to created explicitly
 
@@ -12,7 +12,9 @@ public class LoginPage extends BasePage {
 		super(driver); // means using Parent's driver
 		
 	}
-  By userName=By.id("ap_email");
+	
+	//By Class:	Initializes a new instance of the By class using the given functions to find element 
+	  By userName=By.id("ap_email");
   public void setUsername(String input) {
 	// This need to call from LoginTest  
 	  getSendKey(userName, input); 
@@ -39,13 +41,15 @@ public class LoginPage extends BasePage {
 	  getClickSignInSubmit(clickSubmit);
 		  
 }
-  By clickLogout=By.xpath("(//span[@class='nav-text'])[21]\")).click()");
+ // By clickLogout=By.xpath("(//span[@class='nav-text'])[21]\")));
+  By clickLogout=By.xpath("*[@id=\"nav-item-signout\"]/span");   
   public void setLogout() {	
-	  getLogoutButton(clickLogout);
+	  getLogoutButton(clickLogout); //need to work
   }
+  
   By accountList=By.xpath("//*[@id=\"nav-link-accountList\"]");
   public void setMouseOverOnLIst() {
+	 
 	  getMouseHoverOnList(accountList);
   }
 } 
-

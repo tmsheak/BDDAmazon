@@ -1,21 +1,3 @@
-#Author: your.email@your.domain.com
-#Keywords Summary :
-#Feature: List of scenarios.
-#Scenario: Business rule through list of steps with arguments.
-#Given: Some precondition step
-#When: Some key actions
-#Then: To observe outcomes or validation
-#And,But: To enumerate more Given,When,Then steps
-#Scenario Outline: List of steps for data-driven as an Examples and <placeholder>
-#Examples: Container for s table
-#Background: List of steps run before each of the scenarios
-#""" (Doc Strings)
-#| (Data Tables)
-#@ (Tags/Labels):To group Scenarios
-#<> (placeholder)
-#""
-## (Comments)
-#Sample Feature Definition Template
 @data
 Feature: Valid and invalid login Test
 
@@ -23,18 +5,13 @@ Feature: Valid and invalid login Test
     Given User is on Amazon Homepage
     And User click on signinbutton
     When User enter valid username <userName>
-    #When User enter <userName> as valid username
     And User click on Continuebutton
-    #And User enter <password> as valid username
     And User enter valid password <password>
-    And User click on loginbutton
-    #Then User validate the landing page
-    #And User validate the page tittle
-    #And User click on LogoutButton
+    #And User click on loginbutton
     Then User click on LogoutButton
-
+    #need valid credential to run the test, take care yourself, below dummy data
     Examples: 
       | userName            | password     |
-      | "21tarsm@gmail.com" | "Meah@342"   |
-      | "21tarsm@gmail.com" | "Meah@2017"  |
-      | "smtk2@gmail.com"   | "Yaamin@321" |
+      | "21tsm@gmail.com" | "Meah@342"   |
+      | "21tar@gmail.com" | "Meah@2017"  |
+      | "smtk2@gmail.com"   | "Yamin@321" |

@@ -16,9 +16,12 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 /*
- Write all the common method related to Test: Open browser, maximize, assertion, constructor and driver involved here
-Super Constructor will provide the driver,   app url , proxy, ssl, headless, Browser related.
- *****************BaseTest will extends by loginTest***********    
+ Write all the common method related to Test: Open browser, maximize, assertion,
+ * constructor and driver involved here Super Constructor will provide the driver,
+ *  app url , proxy, ssl, headless, Browser related.
+ *  
+ *****************BaseTest will extends by loginTest*********** 
+ *   
  * Declaring Static ==> To access from other class       */
 
 public class BaseTest {
@@ -80,6 +83,8 @@ public class BaseTest {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(LONG_TEN));
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(LONG_FIFTY));
 		driver.manage().timeouts().setScriptTimeout(Duration.ofSeconds(LONG_TEN));
+		
+		
 		driver.get(APPURL);
 		driver.manage().window().maximize();
 		return driver;
@@ -113,7 +118,8 @@ public class BaseTest {
 	} 
             
 	/**
-	 *IF YOU WRITE BELOW TWO BLOCK OF CODE, IT WILL BE EASY TO DEBUG || OTHERWISE YOU CAN JUST WRITE: driver.quit();
+	 *IF YOU WRITE BELOW TWO BLOCK OF CODE, IT WILL BE EASY TO DEBUG,
+	 * OTHERWISE YOU CAN JUST WRITE: driver.quit();
 	 */
 	public boolean ifDriverNull() {
 		if (driver == null) {

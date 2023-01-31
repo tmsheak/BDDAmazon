@@ -10,8 +10,12 @@ import com.tarekacademy.base.BaseTest;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.Scenario;
 
+//This class is responsible for taking Screenshot for failed step/scenario
 public class Hooks extends BaseTest{
+	//Is-A relationship with BaseTest ( using Extends keyword)
+	
 	LoginPage lp;
+	//Has-A relationship with LoginPage
 	
 	@AfterStep
 	public void AddScreenShot(Scenario scenario) throws IOException {
